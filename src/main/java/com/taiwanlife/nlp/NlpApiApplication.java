@@ -11,7 +11,7 @@ public class NlpApiApplication {
 
     @GetMapping("/api/nlp")
     public String nlp() {
-        return "NLP API had been called!!!";
+        return "NLP API had been called!!! uat";
     }
     
 	public static void main(String[] args) {
