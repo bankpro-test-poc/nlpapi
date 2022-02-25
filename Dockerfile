@@ -10,7 +10,7 @@ WORKDIR /mnt
 
 #bat檔傳進來的參數
 ARG TARGET_FILENAME
-COPY /var/lib/jenkins/workspace/nlpapi/target/$TARGET_FILENAME /mnt
+COPY /target/$TARGET_FILENAME /mnt
 
 # 如果是使用tar檔安裝jdk，java home 要當作參數傳進去docker，在docker裡面設定/etc/environment，沒有用
 # ENV JAVA_HOME /usr/lib/java/jdk-11.0.14.1+1
