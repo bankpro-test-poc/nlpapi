@@ -10,11 +10,10 @@ WORKDIR /mnt
 
 #bat檔傳進來的參數
 ARG TARGET_FILENAME
-COPY /target/$TARGET_FILENAME /mnt
 
 # linux 寫法
 COPY ./target/$TARGET_FILENAME /mnt
-#
+
 # windows寫法
 # COPY /target/$TARGET_FILENAME /mnt
 
