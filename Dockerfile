@@ -12,7 +12,7 @@ WORKDIR /mnt
 ARG TARGET_FILENAME
 
 # linux 寫法
-COPY target/$TARGET_FILENAME /mnt
+COPY $JENKINS_HOME/workspace/nlpapi/target/$TARGET_FILENAME /mnt
 #
 # windows寫法
 # COPY /target/$TARGET_FILENAME /mnt
