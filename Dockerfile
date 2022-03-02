@@ -1,6 +1,6 @@
 
 #使用基礎版本的docker
-FROM ubuntu/poc:base as ubuntu-poc-base
+FROM dev-msr.poc.omniwaresoft.com.tw/devops/ubuntu-poc:base as ubuntu-poc-base
 
 #維護人員
 MAINTAINER bankpro

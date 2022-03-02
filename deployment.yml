@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+# 使用namespace區分環境
 metadata:
   namespace: sit
   name: nlpapi-deployment
@@ -10,12 +11,12 @@ spec:
   replicas: 1
   template:
     metadata:
-      name: nlpapi
+      name: nlpapi-metadata
       labels:
         app: nlpapi-pod
     spec:
       containers:
       - name: nlpapi-container
-        image: ubuntu/poc:nlp
+        image: ubuntu-poc:nlp
         ports:
         - containerPort: 8090
